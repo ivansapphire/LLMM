@@ -8,6 +8,9 @@ Ejercicio | Descripción
 [Ejercicio2](/tema1/biblioteca.xml) | Documento xml que incluya información sobre un par de libros de una biblioteca.
 [Ejercicio3](/tema1/SVG.html) | Ejemplo de SVG
 
+## Tema 1 - HTMLEjercicios
+Ejercicio | Descripción 
+----------|------------
 [Ejercicio3](/tema1/Ejercicio1HTML.html) | Texto
 [Ejercicio3](/tema1/Ejercicio2HTML.html) | Seis niveles distintos decabeceera
 [Ejercicio3](/tema1/Ejercicio3HTML.html) | Cabeceras y etiquetas
