@@ -11,7 +11,7 @@ Ejercicio | Descripción
 ## Tema 1 - HTMLEjercicios
 Ejercicio | Descripción 
 ----------|------------
-[Ejercicio3](/tema1/Ejercicio1HTML.html) | Texto
-[Ejercicio3](/tema1/Ejercicio2HTML.html) | Seis niveles distintos decabeceera
+[Ejercicio1](/tema1/Ejercicio1HTML.html) | Texto
+[Ejercicio2](/tema1/Ejercicio2HTML.html) | Seis niveles distintos decabeceera
 [Ejercicio3](/tema1/Ejercicio3HTML.html) | Cabeceras y etiquetas
-[Ejercicio3](/tema1/Ejercicio4HTML.html) | Texto con etiquetas html sin que el navegador las entienda como tal
+[Ejercicio4](/tema1/Ejercicio4HTML.html) | Texto con etiquetas html sin que el navegador las entienda como tal
