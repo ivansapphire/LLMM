@@ -18,4 +18,4 @@ Ejercicio | Descripción
 [Ejercicio5](/tema1/Ejercicio5HTML.html) | Texto con diferentes párrafos, con distinta alineación y con encabezados
 [Ejercicio6](/tema1/Ejercicio6HTML.html) | Texto con distintos formatos de texto.
 [Ejercicio7](/tema1/Ejercicio7HTML.html) | Pagina con color de fondo y color 
-[Ejercicio8](/tema1/Ejercicio8/índice.html) | Pagina con color de fondo y color 
+[Ejercicio8](/tema1/Ejercicio_8/índice.html) | Pagina con color de fondo y color 
