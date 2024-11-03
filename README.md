@@ -19,3 +19,5 @@ Ejercicio | Descripción
 [Ejercicio6](/tema1/Ejercicio6HTML.html) | Texto con distintos formatos de texto.
 [Ejercicio7](/tema1/Ejercicio7HTML.html) | Pagina con color de fondo y color 
 [Ejercicio8](/tema1/Ejercicio8HTML/índice.html) | Pagina con color de fondo y color 
+[Ejercicio8](/tema1/Ejercicio8HTML/índice.html) | Pagina con color de fondo y color 
+[Ejercicio10](/tema1/Ejercicio10HTML) |  Listas anidadas
