@@ -22,3 +22,8 @@ Ejercicio | Descripción
 [Ejercicio8](/tema1/Ejercicio8HTML/índice.html) | Pagina con color de fondo y color 
 [Ejercicio10](/tema1/Ejercicio10HTML.html) |  Listas anidadas
 [Ejercicio11](/tema1/Ejercicio11HTML.html) |  Listas anidadas con itemns añadidos
+
+## PROYECTOS - Primer Trimestre
+Ejercicio | Descripción 
+----------|------------
+[Trabajo trimestral](/tema1/Ejercicio1HTML.html) | Texto
