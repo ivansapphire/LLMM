@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web4u </title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!-- Icono que aparece en la pestaña -->
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+    <div id="container">
+
+        <header>
+            <h1> Web4u, your web to learn markup language </h1>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a href="CSS.html">CSS</a></li>
+                <li><a class="active" href="SVG.html">SVG</a></li>
+            </ul>
+        </nav>
+
+        <div id="clearfix"></div>
+
+        <section id="content">
+            <article id="html" class="html">
+                <h2><u>What is SVG?</u></h2>
+                <p>SVG (Scalable Vector Graphics) is an XML-based file format used to define vector graphics for the web. It allows for the creation of interactive and scalable images such as logos, icons, illustrations, and diagrams. Unlike raster images (like JPEG or PNG), SVG images can be resized without losing quality, making them ideal for responsive web design. SVG was developed by the W3C (World Wide Web Consortium) and became a standard in 2001.</p>
+                
+                <h2><u>History and Evolution</u></h2>
+                <p>
+                    <ul1>
+                        <li><strong>SVG 1.0 (2001):</strong> The first version, focused on defining vector graphics and basic shapes like lines, circles, and paths.</li><br>
+                        <li><strong>SVG 1.1 (2003):</strong> Expanded functionality, allowing for more advanced shapes, filters, and animations.</li><br>
+                        <li><strong>SVG 2.0 (Upcoming):</strong> The next version is expected to enhance support for features like better styling, accessibility, and improved interactivity with JavaScript.</li><br>
+                    </ul1>
+                </p>
+                
+                <h2><u>What is SVG used for?</u></h2>
+                <p>Creating scalable graphics: SVG images can be resized without losing quality, making them ideal for responsive web design. <br>
+                   Web icons and illustrations: SVG is widely used for creating clean and simple icons, logos, and illustrations that remain sharp on all screen sizes. <br>
+                   Animations and interactivity: SVG supports animation and interactivity via CSS and JavaScript, allowing for dynamic visual elements on a page. <br>
+                   Data visualization: SVG is often used to create charts, graphs, and other data visualizations that scale smoothly across devices. <br>
+                   Accessibility: SVG elements are accessible to screen readers, and their text can be styled and interacted with using web technologies.
+                </p>
+
+                <section>
+                    <h3>1. &lt;svg&gt;</h3>
+                    <p>The main container for SVG graphics, which defines the space where the content will be drawn.</p>
+                    <pre><code>&lt;svg width="200" height="200" style="border: 1px solid black;"&gt;
+                    &lt;circle cx="100" cy="100" r="50" fill="blue" /&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200" style="border: 1px solid black;">
+                        <!-- Draw a circle in the SVG -->
+                        <circle cx="100" cy="100" r="50" fill="blue" /> <!-- Blue circle with center at (100, 100) and radius 50 -->
+                    </svg>
+                </section>
+                
+                <section>
+                    <h3>2. &lt;circle&gt;</h3>
+                    <p>Used to draw circles. It requires the attributes <code>cx</code>, <code>cy</code> (center coordinates), and <code>r</code> (radius).</p>
+                    <pre><code>&lt;svg width="200" height="200"&gt;
+                    &lt;circle cx="100" cy="100" r="40" fill="red" /&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200">
+                        <circle cx="100" cy="100" r="40" fill="red" /> <!-- Red circle with center at (100, 100) and radius 40 -->
+                    </svg>
+                </section>
+                
+                <section>
+                    <h3>3. &lt;rect&gt;</h3>
+                    <p>Draws a rectangle. Uses the attributes <code>x</code>, <code>y</code> (starting position), and <code>width</code>, <code>height</code> (dimensions).</p>
+                    <pre><code>&lt;svg width="200" height="200"&gt;
+                    &lt;rect x="50" y="50" width="100" height="100" fill="green" /&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200">
+                        <rect x="50" y="50" width="100" height="100" fill="green" /> <!-- Green rectangle of 100x100 starting at (50, 50) -->
+                    </svg>
+                </section>
+                
+                <section>
+                    <h3>4. &lt;line&gt;</h3>
+                    <p>Draws a straight line between two points. It requires the attributes <code>x1</code>, <code>y1</code> (start), and <code>x2</code>, <code>y2</code> (end).</p>
+                    <pre><code>&lt;svg width="200" height="200"&gt;
+                    &lt;line x1="10" y1="10" x2="150" y2="150" stroke="purple" stroke-width="2" /&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200">
+                        <line x1="10" y1="10" x2="150" y2="150" stroke="purple" stroke-width="2" /> <!-- Purple line with thickness 2 -->
+                    </svg>
+                </section>
+                
+                <section>
+                    <h3>5. &lt;polygon&gt;</h3>
+                    <p>Draws a polygon using a list of connected points.</p>
+                    <pre><code>&lt;svg width="200" height="200"&gt;
+                    &lt;polygon points="50,150 100,50 150,150" fill="orange" /&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200">
+                        <polygon points="50,150 100,50 150,150" fill="orange" /> <!-- Orange polygon with vertices at the specified points -->
+                    </svg>
+                </section>
+                
+                <section>
+                    <h3>6. &lt;path&gt;</h3>
+                    <p>Allows drawing complex shapes with a command sequence in the <code>d</code> attribute.</p>
+                    <pre><code>&lt;svg width="200" height="200"&gt;
+                    &lt;path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent" /&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200">
+                        <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" stroke="black" fill="transparent"/> <!-- Curved line using SVG commands -->
+                    </svg>
+                </section>
+                
+                <section>
+                    <h3>7. &lt;text&gt;</h3>
+                    <p>Draws text within the SVG. Uses <code>x</code> and <code>y</code> to position the text.</p>
+                    <pre><code>&lt;svg width="200" height="200"&gt;
+                    &lt;text x="50" y="100" font-family="Verdana" font-size="25" fill="blue"&gt;Hello SVG!&lt;/text&gt;
+                &lt;/svg&gt;</code></pre>
+                    <svg width="200" height="200">
+                        <text x="50" y="100" font-family="Verdana" font-size="25" fill="blue">Hello SVG!</text> <!-- Blue text inside the SVG -->
+                    </svg>
+                </section>
+                </article>
+                </section>
+                
+                <footer id="section-about">
+                    <p>This page was made by Iván Garrido Moguer for a LLM work.</p>
+                </footer>
+                
+                <aside>
+                    <p>For more information visit:</p>
+                    <p><a href="https://www.w3schools.com/section-svg/">W3Schools - SVG</a></p>
+                    <p><a href="https://drive.google.com/file/d/1gjrZRk69BRFjTOBgX5BerR5MLMIwefmA/view?usp=sharing">You can dowload this manual in PDF</a></p>
+                </aside>
+                </div>
+                </body>
+                </html>

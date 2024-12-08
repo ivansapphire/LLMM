@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<head>
+    <!-- Configuración básica del archivo HTML -->
+    <meta charset="utf-8"/> <!-- Permite mostrar caracteres especiales como acentos -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace que la página sea responsive -->
+    <title> Web4u </title> <!-- Título de la página -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico"> <!-- Icono que aparece en la pestaña -->
+    <link rel="stylesheet" href="estilos.css"/> <!-- Conexión al archivo CSS para el diseño -->
+</head>
+<body>
+    <div id="container">
+
+        <!-- Encabezado principal del sitio -->
+        <header>
+            <h1> Web4u, your web to learn markup language </h1> <!-- Título principal que describe el propósito de la página -->
+        </header>
+
+        <!-- Barra de navegación -->
+        <nav>
+            <ul>
+                <!-- Elementos del menú. La clase "active" indica la sección actual -->
+                <li><a href="index.html">Home</a></li>
+                <li><a href="HTML.html">HTML</a></li>
+                <li><a class="active" href="CSS.html">CSS</a></li>
+                <li><a href="SVG.html">SVG</a></li>
+            </ul>
+        </nav>
+
+        <div id="clearfix"></div> <!-- Soluciona problemas de diseño con elementos flotantes -->
+
+        <!-- Contenido principal -->
+        <section id="content">
+            <article id="html" class="html">
+                <!-- Introducción a CSS -->
+                <h2><u>What is CSS?</u></h2>
+                <p>CSS (Cascading Style Sheets) is a stylesheet language used to describe the presentation of a document written in HTML or XML. It controls the layout, design, and visual aspects of web pages, such as colors, fonts, spacing, and positioning. CSS was created by Håkon Wium Lie and Bert Bos in 1994, and it has since become a crucial part of web development, allowing for separation of content (HTML) and design (CSS) in web documents.</p>
+                
+                <!-- Historia de CSS -->
+                <h2><u>History and Evolution</u></h2>
+                <p>
+                    <!-- Se usa una lista personalizada porque ul1 fue modificada en CSS -->
+                    <ul1>
+                        <li><strong>CSS1 (1996):</strong> The first version, focused on basic styling features such as fonts, colors, and alignment.</li><br>
+                        <li><strong>CSS2 (1998):</strong> Introduced advanced features like positioning, media types, and more precise control over page layout.</li><br>
+                        <li><strong>CSS3 (1999-Present):</strong> Split into multiple modules, adding support for animations, transitions, gradients, and responsive design.</li><br>
+                    </ul1>
+                </p>
+                
+                <!-- Ejemplos de uso práctico de CSS -->
+                <h2><u>What is CSS used for?</u></h2>
+                <p>
+                    <!-- Se menciona cómo CSS mejora la experiencia del usuario -->
+                    Styling web pages: CSS defines the appearance of elements on a webpage, such as text color, background images, borders, and layout. <br>
+                    Layout management: CSS is used to arrange elements on a page using tools like grids, flexbox, and positioning techniques. <br>
+                    Responsiveness: CSS allows websites to adapt their layout to different screen sizes, ensuring a good user experience on desktops, tablets, and mobile devices. <br>
+                    Enhancing user interface: CSS is used to create hover effects, transitions, and animations that improve the interaction between the user and the webpage. <br>
+                    Customizing web elements: With CSS, developers can control the look of forms, buttons, navigation menus, and other interface components.
+                </p>
+            </article>
+
+            <!-- Ejemplos prácticos de propiedades CSS -->
+            <h2><u>CSS Tags Explained</u></h2>
+            <!-- Cada propiedad tiene un ejemplo práctico -->
+            <h3><u>1. <code>color</code> - Text Color</u></h3>
+            <p>The <code>color</code> property is used to set the text color of an element.</p>
+            <pre><code>p { color: red; }</code></pre>
+            <div class="example-box" style="color: red;">
+                <p>This paragraph has red text color.</p>
+            </div>
+            
+            <!-- Más ejemplos de propiedades comunes -->
+            <h3><u>2. <code>background-color</code> - Background Color</u></h3>
+            <p>The <code>background-color</code> property is used to set the background color of an element.</p>
+            <pre><code>div { background-color: lightblue; }</code></pre>
+            <div class="example-box" style="background-color: lightblue;">
+                <p>This div has a light blue background.</p>
+            </div>
+            <h3><u>3. <code>font-size</code> - Font Size</u></h3>
+                <p>The <code>font-size</code> property specifies the size of the font for the text within an element.</p>
+                <pre><code>h1 { font-size: 36px; }</code></pre>
+                <div class="example-box" style="font-size: 36px;">
+                    <h1>This header has a font size of 36px.</h1>
+                </div>
+
+                <h3><u>4. <code>margin</code> - External Spacing</u></h3>
+                <p>The <code>margin</code> property creates space outside the border of an element.</p>
+                <pre><code>div { margin: 20px; }</code></pre>
+                <div class="example-box" style="margin: 20px; border: 1px solid black;">
+                    <p>This div has a margin of 20px around it.</p>
+                </div>
+
+                <h3><u>5. <code>padding</code> - Internal Spacing</u></h3>
+                <p>The <code>padding</code> property adds space inside the element, between its content and the border.</p>
+                <pre><code>div { padding: 15px; }</code></pre>
+                <div class="example-box" style="padding: 15px; border: 1px solid black;">
+                    <p>This div has 15px padding inside it.</p>
+                </div>
+
+                <h3><u>6. <code>border</code> - Element Border</u></h3>
+                <p>The <code>border</code> property sets the border style, width, and color of an element.</p>
+                <pre><code>div { border: 2px solid black; }</code></pre>
+                <div class="example-box" style="border: 2px solid black;">
+                    <p>This div has a 2px solid black border.</p>
+                </div>
+
+                <h3><u>7. <code>display</code> - Display Type</u></h3>
+                <p>The <code>display</code> property defines the display type of an element. Common values include <code>block</code>, <code>inline</code>, and <code>flex</code>.</p>
+                <pre><code>div { display: flex; }</code></pre>
+                <div class="example-box" style="display: flex;">
+                    <p>This div uses the <code>flex</code> display property, making its child elements flexible.</p>
+                </div>
+
+            </article>
+        </section>
+        <footer id="section-about">
+            <p>This page was made by Iván Garrido Moguer for a LLM work.</p>
+        </footer>
+
+        <aside>
+            <p>For more information visit:</p>
+            <p><a href="https://www.w3schools.com/css/">W3Schools - CSS</a></p>
+            <p><a href="https://drive.google.com/file/d/1vrJZht7Wk4LSyPbPCcorv1ixip4UVTEP/view?usp=sharing">You can dowload this manual in PDF</a></p>
+        </aside>
+    </div>
+</body>
+</html>

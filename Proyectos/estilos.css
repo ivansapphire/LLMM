@@ -1,0 +1,117 @@
+
+/* Estilos generales para el cuerpo del documento */
+body {
+    background-color: rgb(70, 66, 66); /* Fondo gris oscuro */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; /* Fuente moderna y legible */
+}
+
+/* Contenedor principal */
+#container {
+    background-color: rgb(41, 71, 49); /* Fondo verde oscuro */
+    width: 90%; /* Ancho del 90% del viewport */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+}
+
+/* Encabezado principal */
+header {
+    background-color: lightgray; /* Fondo gris claro */
+    padding: 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+}
+
+/* Contenido principal */
+#content {
+    float: left; /* Flota el contenido a la izquierda */
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    background-color: darkgray; /* Fondo gris oscuro */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Menú de navegación */
+ul {
+    list-style-type: none; /* Elimina viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Controla el desbordamiento */
+    background-color: #083617; /* Fondo verde oscuro */
+    text-align: center; /* Centra los elementos del menú */
+}
+
+li {
+    display: inline-block; /* Hace que los elementos de lista estén en línea */
+}
+
+li a {
+    display: block; /* Los enlaces ocupan todo el espacio disponible */
+    color: white; /* Texto blanco */
+    text-align: center;
+    padding: 14px 16px; /* Espaciado interno */
+    text-decoration: none; /* Sin subrayado */
+}
+
+li a:hover:not(.active) {
+    background-color: rgb(193, 201, 87); /* Fondo amarillo al pasar el cursor */
+}
+
+.active {
+    background-color: rgb(10, 90, 24); /* Fondo verde oscuro para el elemento activo */
+}
+
+/* Pie de página */
+footer {
+    float: left; /* Flota a la izquierda */
+    width: 20%; /* Ocupa el 20% del ancho del contenedor */
+    background-color: orange; /* Fondo naranja */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Clase para limpiar floats */
+#clearfix {
+    clear: both; /* Elimina efectos de flotación */
+}
+
+/* Barra lateral */
+aside {
+    background-color: #333; /* Fondo gris muy oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el contenido */
+    padding: 10px; /* Espaciado interno */
+}
+
+/* Sección "About" */
+#section-about {
+    float: left; /* Flota a la izquierda */
+    width: 80%; /* Ocupa el 80% del ancho del contenedor */
+    background-color: lightslategray; /* Fondo gris pizarra claro */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Estilo para imágenes específicas */
+.imagenhtml, .imagencss, .imagensvg {
+    float: right; /* Flota las imágenes a la derecha */
+    width: 70px; /* Ancho fijo */
+    transform: translateX(-90px) translateY(-90px); /* Ajusta la posición */
+}
+
+/* Imagen SVG tiene un ajuste especial */
+.imagensvg {
+    transform: translateX(-90px) translateY(-80px); /* Ajuste único para SVG */
+}
+
+/* Imágenes responsivas */
+.responsive-img {
+    max-width: 100%; /* No excede el ancho del contenedor */
+    height: auto; /* Mantiene proporciones */
+    display: block; /* Evita espacios adicionales */
+    margin: 0 auto; /* Centra la imagen */
+}
+
+/* Estilo para bloques de código */
+pre {
+    background-color: #000; /* Fondo negro */
+    color: #fff; /* Texto blanco */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    font-family: Consolas, 'Courier New', monospace; /* Fuente monoespaciada */
+    font-size: 14px; /* Tamaño de fuente */
+}
