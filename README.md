@@ -26,4 +26,4 @@ Ejercicio | Descripción
 ## PROYECTOS - Primer Trimestre
 Ejercicio | Descripción 
 ----------|------------
-[Trabajo trimestral](/tema1/Ejercicio1HTML.html) | Texto
+[Trabajo trimestral](Proyectos/index.html) | Primes proyecto trimestral
