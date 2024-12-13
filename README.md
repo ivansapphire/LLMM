@@ -26,4 +26,4 @@ Ejercicio | Descripción
 ## PROYECTOS - Primer Trimestre
 Ejercicio | Descripción 
 ----------|------------
-[Trabajo trimestral](https://ivansapphire.github.io/Trabajo-Trimestral-1/index.html) | Enlace a la web del primer proyecto trimestral
+[Trabajo trimestral](https://ivansapphire.github.io/Trabajo-Trimestral-1/index.html) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta proyectos)
