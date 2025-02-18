@@ -1,0 +1,126 @@
+body {
+  background-color: #121212; 
+  color: #f5f5f5; 
+}
+
+html {
+  overflow-y: scroll;
+}
+
+.navbar {
+  background-color: #b71c1c; 
+}
+
+.navbar-nav {
+  margin: auto;
+}
+
+.navbar-brand,
+.nav-link {
+  color: #f5f5f5 !important; 
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #ffcc00 !important; 
+}
+
+.card {
+  margin-bottom: 20px;
+  background-color: #1e1e1e; 
+  border: 1px solid #333; 
+}
+
+.card-img-top {
+  height: 250px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto;
+}
+
+.card-title {
+  color: #ffcc00; 
+}
+
+.card-text {
+  color: #ddd; 
+}
+.carousel-inner img {
+  height: 675px; 
+  object-fit: cover;
+}
+.card-body {
+  text-align: center;
+}
+
+.price-container {
+  display: flex;
+  flex-direction: row; 
+  align-items: center; 
+  justify-content: center; 
+  gap: 8px; 
+  margin-top: 10px;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: red;
+  font-size: 14px;
+}
+
+.price-text {
+  color: #4caf50;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.no-stock {
+  color: rgb(255, 0, 0);
+  font-size: 18px;
+  
+}
+
+.low-stock {
+  color: rgb(250, 114, 3);
+  font-size: 18px;
+}
+
+.card img {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.vinilo {
+  vertical-align: text-top;
+}
+
+.nav-link.vinilovuelta:hover .vinilo {
+  transform: rotate(1500deg);
+  transition: all 10s ease;
+}
+
+.nav-link.flechapaarriba:hover .flecha {
+  transform: translateY(-10px);
+  transition: transform 0.5s ease; 
+}
+
+.nav-link.videoanimacion:hover .video {
+  transform: scale(1.2); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+.nav-link.registroanimacion:hover .registro {
+  transform: scale(1.2); 
+  transition: transform 0.3s ease-in-out; 
+}
+
+audio{
+max-width: 100%;
+max-height: 100%;
+margin:auto;
+object-fit: contain;
+}
