@@ -23,7 +23,16 @@ Ejercicio | Descripción
 [Ejercicio10](/tema1/Ejercicio10HTML.html) |  Listas anidadas
 [Ejercicio11](/tema1/Ejercicio11HTML.html) |  Listas anidadas con items añadidos
 
-## PROYECTOS - Primer Trimestre
+## PROYECTS - Primer Trimestre
 Ejercicio | Descripción 
 ----------|------------
 [Trabajo trimestral](https://ivansapphire.github.io/Trabajo-Trimestral-1/index.html) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta proyectos)
+
+
+## PROYECTO - Segundo Trimestre
+Ejercicio | Descripción 
+----------|------------
+[Trabajo trimestral](## PROYECTOS - Primer Trimestre
+Ejercicio | Descripción 
+----------|------------
+[Trabajo trimestral](https://ivansapphire.github.io/Trabajo-Trimestral-1/index.html) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta proyectos)) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta proyectos)
