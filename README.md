@@ -31,7 +31,7 @@ Ejercicio | Descripción
 ## PROYECTO - Segundo Trimestre
 Ejercicio | Descripción 
 ----------|------------
-[Trabajo Bootstrapl](https://ivansapphire.github.io/Trabajo-Trimestral-1/index.html) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta proyectos)
+[Trabajo Bootstrap](https://ivansapphire.github.io/ProyectoBootstrap/) | Enlace a la web del primer proyecto trimestral. (El código puede verse en el repositorio Trabajo Bootstrap)
 
 
 
