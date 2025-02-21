@@ -32,11 +32,11 @@ Ejercicio | Descripción
 Ejercicio | Descripción 
 ----------|------------
 [Ejercicio1](/segundo_trimestre/ejercicio1/ejercicio1.html) | Excercise 1. Text format.
-[Ejercicio2](/segundo_trimestre/ejercicio1/ejercicio2.html) | Exercise 2: CSS Layouts
-[Ejercicio3](/segundo_trimestre/ejercicio1/ejercicio3.html) | Exercise 3. Background
-[Ejercicio4](/segundo_trimestre/ejercicio1/ejercicio4.html) | Exercise 4. Menú vertical vs horizontal
-[Ejercicio5](/segundo_trimestre/ejercicio1/ejercicio5.html) | Excercise 5. Styling Tables.
-[Ejercicio6](/segundo_trimestre/ejercicio1/ejercicio6.html) | Exercise 6. Styling Tables.
+[Ejercicio2](/segundo_trimestre/ejercicio2/ejercicio2.html) | Exercise 2: CSS Layouts
+[Ejercicio3](/segundo_trimestre/ejercicio3/ejercicio3.html) | Exercise 3. Background
+[Ejercicio4](/segundo_trimestre/ejercicio4/ejercicio4.html) | Exercise 4. Menú vertical vs horizontal
+[Ejercicio5](/segundo_trimestre/ejercicio5/ejercicio5.html) | Excercise 5. Styling Tables.
+[Ejercicio6](/segundo_trimestre/ejercicio6/ejercicio6.html) | Exercise 6. Styling Tables.
 
 
 ## PROYECTO - Segundo Trimestre
