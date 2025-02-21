@@ -31,17 +31,13 @@ Ejercicio | Descripción
 ## Tema 2 - CSSEjercicios
 Ejercicio | Descripción 
 ----------|------------
-[Ejercicio1](/tema1/Ejercicio1HTML.html) | Texto
-[Ejercicio2](/tema1/Ejercicio2HTML.html) | Seis niveles distintos decabeceera
-[Ejercicio3](/tema1/Ejercicio3HTML.html) | Cabeceras y etiquetas
-[Ejercicio4](/tema1/Ejercicio4HTML.html) | Texto con etiquetas html sin que el navegador las entienda como tal
-[Ejercicio5](/tema1/Ejercicio5HTML.html) | Texto con diferentes párrafos, con distinta alineación y con encabezados
-[Ejercicio6](/tema1/Ejercicio6HTML.html) | Texto con distintos formatos de texto.
-[Ejercicio7](/tema1/Ejercicio7HTML.html) | Pagina con color de fondo y color 
-[Ejercicio8](/tema1/Ejercicio8HTML/índice.html) | Pagina con color de fondo y color 
-[Ejercicio8](/tema1/Ejercicio8HTML/índice.html) | Pagina con color de fondo y color 
-[Ejercicio10](/tema1/Ejercicio10HTML.html) |  Listas anidadas
-[Ejercicio11](/tema1/Ejercicio11HTML.html) |  Listas anidadas con items añadidos
+[Ejercicio1](/segundo_trimestre/ejercicio1/ejercicio1.html) | Excercise 1. Text format.
+[Ejercicio2](/segundo_trimestre/ejercicio1/ejercicio2.html) | Exercise 2: CSS Layouts
+[Ejercicio3](/segundo_trimestre/ejercicio1/ejercicio3.html) | Exercise 3. Background
+[Ejercicio4](/segundo_trimestre/ejercicio1/ejercicio4.html) | Exercise 4. Menú vertical vs horizontal
+[Ejercicio5](/segundo_trimestre/ejercicio1/ejercicio5.html) | Excercise 5. Styling Tables.
+[Ejercicio6](/segundo_trimestre/ejercicio1/ejercicio6.html) | Exercise 6. Styling Tables.
+
 
 ## PROYECTO - Segundo Trimestre
 Ejercicio | Descripción 
