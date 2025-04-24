@@ -48,7 +48,7 @@ Ejercicio | Descripción
 
 Ejercicio | Descripción 
 ----------|------------
-[Ejercicio1DOM](/tercer%20trimestre/EJ1/Ejercicio1DOM.html) | Acceder al DOM y mostrar contenido de párrafos en un `div`.
-[Ejercicio2DOM](/tercer%20trimestre/EJ2/Ejercicio2DOM.html) | Crear y agregar una imagen dinámicamente a la página.
-[Ejercicio3DOM](/tercer%20trimestre/EJ3/Ejercicio3DOM.html) | Eliminar elementos de una lista utilizando JavaScript.
-[Ejercicio4DOM](/tercer%20trimestre/EJ4/Ejercicio4DOM.html) | Mostrar propiedades del documento HTML en la consola del navegador.
+[Ejercicio1DOM](/tercer_trimestre/EJ1/Ejercicio1DOM.html) | Acceder al DOM y mostrar contenido de párrafos en un div.
+[Ejercicio2DOM](/tercer_trimestre/EJ2/Ejercicio2DOM.html) | Crear y agregar una imagen dinámicamente a la página.
+[Ejercicio3DOM](/tercer_trimestre/EJ3/Ejercicio3DOM.html) | Eliminar elementos de una lista utilizando JavaScript.
+[Ejercicio4DOM](/tercer_trimestre/EJ4/Ejercicio4DOM.html) | Mostrar propiedades del documento HTML en la consola del navegador.
