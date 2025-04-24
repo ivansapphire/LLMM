@@ -44,5 +44,14 @@ Ejercicio | Descripción
 ----------|------------
 [Trabajo Bootstrap](https://sapphirerecords.netlify.app/) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta Trabajo Bootstrap)
 
+## Tema 3 - DOM
+
+Ejercicio | Descripción 
+----------|------------
+[Ejercicio1DOM](/tercer_trimestre/Ejercicio1DOM.html) | Mostrar párrafos en `div`.
+[Ejercicio2DOM](/tercer_trimestre/Ejercicio2DOM.html) | Crear y agregar imagen.
+[Ejercicio3DOM](/tercer_trimestre/Ejercicio3DOM.html) | Eliminar elementos de lista.
+[Ejercicio4DOM](/tercer_trimestre/Ejercicio4.html) | Mostrar propiedades del documento.
+
 
 
