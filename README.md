@@ -42,7 +42,7 @@ Ejercicio | Descripción
 ## PROYECTO - Segundo Trimestre
 Ejercicio | Descripción 
 ----------|------------
-[Trabajo Bootstrap](https://sapphirerecords.netlify.app/) | Enlace a la web del primer proyecto trimestral. (El código puede verse en la carpeta Trabajo Bootstrap)
+[Trabajo Bootstrap](https://sapphirerecords.netlify.app/) | Enlace a la web del segundo proyecto trimestral. (El código puede verse en la carpeta Trabajo Bootstrap)
 
 ## Tema 3 - DOM
 
@@ -52,3 +52,9 @@ Ejercicio | Descripción
 [Ejercicio2DOM](/tercer_trimestre/EJ2/Ejercicio2DOM.html) | Crear y agregar una imagen dinámicamente a la página.
 [Ejercicio3DOM](/tercer_trimestre/EJ3/Ejercicio3DOM.html) | Eliminar elementos de una lista utilizando JavaScript.
 [Ejercicio4DOM](/tercer_trimestre/EJ4/Ejercicio4DOM.html) | Mostrar propiedades del documento HTML en la consola del navegador.
+
+
+## PROYECTO - Tercer Trimestre
+Ejercicio | Descripción 
+----------|------------
+[Trabajo XML](https://preguntasculturapopivan.netlify.app/) | Enlace a la web del tercer proyecto trimestral. (El código puede verse en la carpeta Trabajo XML)
