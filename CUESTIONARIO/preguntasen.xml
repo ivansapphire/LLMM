@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [
+  <!ELEMENT test (question+)>
+  <!ELEMENT question (wording, choices)>
+  <!ELEMENT wording (#PCDATA)>
+  <!ELEMENT choices (choice+)>
+  <!ELEMENT choice (#PCDATA)>
+  <!ATTLIST question id CDATA #REQUIRED>
+  <!ATTLIST choice correct (yes|no) "no">
+]>
+<test>
+  <question id="1">
+    <wording>What is the name of the protagonist in "Gremlins"?</wording>
+    <choices>
+      <choice correct="yes">Gizmo</choice>
+      <choice correct="no">Gimli</choice>
+      <choice correct="no">BMO</choice>
+      <choice correct="no">Cornifer</choice>
+    </choices>
+  </question>
+  <question id="2">
+    <wording>What is the name of the fifth Star Wars movie?</wording>
+    <choices>
+      <choice correct="no">Return of the Jedi</choice>
+      <choice correct="yes">The Empire Strikes Back</choice>
+      <choice correct="no">Spaceballs</choice>
+      <choice correct="no">Andor</choice>
+    </choices>
+  </question>
+  <question id="3">
+    <wording>How many seasons does the series Friends have?</wording>
+    <choices>
+      <choice correct="no">It hasn't ended yet</choice>
+      <choice correct="no">11</choice>
+      <choice correct="no">7</choice>
+      <choice correct="yes">10</choice>
+    </choices>
+  </question>
+  <question id="4">
+    <wording>What nickname does Gandalf have?</wording>
+    <choices>
+      <choice correct="no">The White</choice>
+      <choice correct="no">The Gray</choice>
+      <choice correct="no">None is correct</choice>
+      <choice correct="yes">Both a and b are correct</choice>
+    </choices>
+  </question>
+  <question id="5">
+    <wording>Who is the protagonist of Resident Evil 4?</wording>
+    <choices>
+      <choice correct="no">John S.Kennedy</choice>
+      <choice correct="no">Shigeru Miyamoto</choice>
+      <choice correct="no">Mark P.Kennedy</choice>
+      <choice correct="yes">Leon S.Kennedy</choice>
+    </choices>
+  </question>
+  <question id="6">
+    <wording>Which of these movies is not from Studio Ghibli?</wording>
+    <choices>
+      <choice correct="no">Ponyo</choice>
+      <choice correct="no">Porco Rosso</choice>
+      <choice correct="no">My Neighbors the Yamadas</choice>
+      <choice correct="yes">Paprika</choice>
+    </choices>
+  </question>
+  <question id="7">
+    <wording>In which of these movies does John Travolta not appear?</wording>
+    <choices>
+      <choice correct="no">Grease</choice>
+      <choice correct="no">Saturday Night Fever</choice>
+      <choice correct="no">Pulp Fiction</choice>
+      <choice correct="yes">Blue Valentine</choice>
+    </choices>
+  </question>
+  <question id="8">
+    <wording>Which of these franchises does not yet have official LEGO representation?</wording>
+    <choices>
+      <choice correct="no">Adventure Time</choice>
+      <choice correct="no">The Powerpuff Girls</choice>
+      <choice correct="no">Portal</choice>
+      <choice correct="yes">Dragon Ball</choice>
+    </choices>
+  </question>
+  <question id="9">
+    <wording>Which soundtracks has Yoko Shimomura composed?</wording>
+    <choices>
+      <choice correct="yes">Kingdom Hearts</choice>
+      <choice correct="no">Final Fantasy X</choice>
+      <choice correct="no">Super Paper Mario</choice>
+      <choice correct="no">Street Fighter 3</choice>
+    </choices>
+  </question>
+  <question id="10">
+    <wording>Which of these singers/groups did not debut in the 80s?</wording>
+    <choices>
+      <choice correct="yes">Michael Jackson</choice>
+      <choice correct="no">George Michael</choice>
+      <choice correct="no">Madonna</choice>
+      <choice correct="no">Pet Shop Boys</choice>
+    </choices>
+  </question>
+  <question id="11">
+    <wording>What is the Konami code?</wording>
+    <choices>
+      <choice correct="no">Up, up, down, down, jump, kick</choice>
+      <choice correct="no">Up, up, down, down, left, left, right, right, B, A, start</choice>
+      <choice correct="no">Up, down, left, right, A</choice>
+      <choice correct="yes">Up, up, down, down, left, right, left, right, B, A, start</choice>
+    </choices>
+  </question>
+  <question id="12">
+    <wording>What is the first game in The Legend of Zelda timeline?</wording>
+    <choices>
+      <choice correct="no">The Minish Cap</choice>
+      <choice correct="yes">Skyward Sword</choice>
+      <choice correct="no">A Link To The Past</choice>
+      <choice correct="no">Ocarina of Time</choice>
+    </choices>
+  </question>
+  <question id="13">
+    <wording>In which of these animated series is Spike Spiegel the main character?</wording>
+    <choices>
+      <choice correct="no">Hamtaro</choice>
+      <choice correct="no">Candy Candy</choice>
+      <choice correct="yes">Cowboy Bebop</choice>
+      <choice correct="no">Initial D</choice>
+    </choices>
+  </question>
+  <question id="14">
+    <wording>Which of these characters is from "The Office"?</wording>
+    <choices>
+      <choice correct="yes">Pam Beesly</choice>
+      <choice correct="no">James Sunderland</choice>
+      <choice correct="no">Barney Stinson</choice>
+      <choice correct="no">Sheldon Cooper</choice>
+    </choices>
+  </question>
+  <question id="15">
+    <wording>Which Japanese animated film was the first to win an Oscar?</wording>
+    <choices>
+      <choice correct="no">Your Name</choice>
+      <choice correct="yes">Spirited Away</choice>
+      <choice correct="no">Akira</choice>
+      <choice correct="no">Princess Mononoke</choice>
+    </choices>
+  </question>
+  <question id="16">
+    <wording>Which manga was created by Naoki Urasawa?</wording>
+    <choices>
+      <choice correct="no">Nana</choice>
+      <choice correct="no">Death Note</choice>
+      <choice correct="yes">Monster</choice>
+      <choice correct="no">Samurai Champloo</choice>
+    </choices>
+  </question>
+  <question id="17">
+    <wording>Who is the main composer of the soundtrack for "The Last of Us"?</wording>
+    <choices>
+      <choice correct="yes">Gustavo Santaolalla</choice>
+      <choice correct="no">Koji Kondo</choice>
+      <choice correct="no">Steve Spenser</choice>
+      <choice correct="no">Bobby Kotick</choice>
+    </choices>
+  </question>
+  <question id="18">
+    <wording>Which of these music albums has sold the most?</wording>
+    <choices>
+      <choice correct="yes">Thriller</choice>
+      <choice correct="no">Rumours</choice>
+      <choice correct="no">Back to Black</choice>
+      <choice correct="no">Hotel California</choice>
+    </choices>
+  </question>
+  <question id="19">
+    <wording>In which video game did Waluigi first appear?</wording>
+    <choices>
+      <choice correct="no">Mario Kart DS</choice>
+      <choice correct="no">Super Mario RPG</choice>
+      <choice correct="yes">Mario Tennis</choice>
+      <choice correct="no">Mario &amp; Luigi: Dream Team Bros</choice>
+    </choices>
+  </question>
+  <question id="20">
+    <wording>Which popular animated series was created by Pendleton Ward?</wording>
+    <choices>
+      <choice correct="no">Regular Show</choice>
+      <choice correct="no">Dexter's Laboratory</choice>
+      <choice correct="no">Code Lyoko</choice>
+      <choice correct="yes">Adventure Time</choice>
+    </choices>
+  </question>
+</test>

@@ -1,0 +1,238 @@
+/* Reset básico y fuente general para todo */
+* {
+  margin: 0; /* quito márgenes por defecto */
+  padding: 0; /* quito padding por defecto */
+  box-sizing: border-box; /* para que ancho y alto incluyan borde y padding */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* fuente legible y moderna */
+}
+
+body {
+  /* Fondo con imagen fija y centrada */
+  background-image: url('https://wallpapercave.com/wp/wp13237530.jpg');
+  background-size: cover; /* que cubra todo */
+  background-repeat: no-repeat; /* sin repetición */
+  background-position: center; /* centrado */
+  background-attachment: fixed; /* que no se mueva al hacer scroll */
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* fallback para el cuerpo */
+  color: #2b2b2b; /* texto oscuro para buen contraste */
+}
+
+/* Contenedores de cada pantalla del quiz (inicio, quiz, fin) */
+.screen {
+  display: none; /* por defecto ocultas */
+  background: rgba(255, 248, 240, 0.9); /* fondo clarito y cálido, para que contraste bien con el fondo */
+  backdrop-filter: blur(10px); /* efecto blur para difuminar el fondo detrás */
+  padding: 30px 30px; /* espacio interno */
+  border-radius: 20px; /* bordes redondeados */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.15); /* sombra suave para dar profundidad */
+  max-width: 500px; /* ancho máximo para que no sea muy ancho */
+  width: 100%; /* pero que ocupe todo en móviles */
+  transition: opacity 0.35s ease; /* transición suave para mostrar/ocultar */
+  border: 1.5px solid rgba(255, 200, 160, 0.6); /* borde cálido */
+  margin: auto; /* centrado horizontal */
+}
+
+/* Pantalla activa visible */
+.screen.active {
+  display: block; /* se muestra */
+  opacity: 1; /* opacidad total */
+}
+
+/* Títulos principales */
+h1, h2 {
+  font-weight: 700; /* negrita fuerte */
+  color: #c0571c; /* color naranja oscuro */
+  margin-bottom: 20px; /* espacio debajo */
+  text-align: center; /* centrados */
+  letter-spacing: 0.02em; /* un poco de espacio entre letras */
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.6); /* sombra clara para destacar */
+}
+
+/* Select para elegir idioma */
+#language {
+  padding: 10px 15px;
+  border: 2px solid #ffddb3; /* borde suave */
+  border-radius: 14px;
+  background: #fff4e5; /* fondo clarito */
+  color: #a85b1c; /* texto marrón */
+  font-size: 1rem;
+  cursor: pointer; /* puntero cuando paso el ratón */
+  transition: all 0.3s ease; /* transición suave */
+  margin-bottom: 25px; /* margen abajo */
+  display: block;
+  margin-left: auto; /* centrado horizontal */
+  margin-right: auto;
+}
+
+/* Botones en general */
+button {
+  background: linear-gradient(145deg, #ffb17a, #ff884d); /* degradado naranja */
+  color: #ffffff; /* texto blanco */
+  border: none;
+  padding: 12px 24px;
+  font-weight: 600;
+  border-radius: 18px;
+  box-shadow: 0 5px 10px rgba(255, 115, 0, 0.3); /* sombra naranja */
+  cursor: pointer;
+  font-size: 1.05rem;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* transiciones suaves */
+  user-select: none; /* evitar selección de texto al clickar */
+  margin-top: 20px;
+  display: block;
+  width: 100%; /* ancho máximo 220px */
+  max-width: 220px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Efecto hover en botones (solo si no están deshabilitados) */
+button:hover:not(:disabled) {
+  background: linear-gradient(145deg, #ff9a58, #ff6d00); /* degradado más fuerte */
+  transform: scale(1.03); /* efecto zoom */
+}
+
+/* Botones deshabilitados */
+button:disabled {
+  background-color: #ffe3c9; /* color claro */
+  cursor: not-allowed; /* cursor prohibido */
+  box-shadow: none; /* sin sombra */
+}
+
+/* Header del quiz con temporizador */
+.header {
+  display: flex;
+  justify-content: center; /* centrado horizontal */
+  font-weight: 600;
+  font-size: 1rem;
+  color: #8b4513; /* marrón oscuro */
+  margin-bottom: 20px;
+}
+
+/* Contenedor donde se muestra la pregunta */
+#question-container {
+  text-align: center; /* texto centrado */
+}
+
+/* Pregunta dentro del contenedor */
+#question-container h2 {
+  font-weight: 600;
+  font-size: 1.3rem;
+  margin-bottom: 24px;
+  color: #9f3c1e; /* rojo oscuro */
+}
+
+/* Opciones de respuesta */
+.choice {
+  background: #fffefc; /* fondo casi blanco */
+  border: 2px solid #ffe0c7; /* borde suave */
+  border-radius: 14px;
+  padding: 12px 20px;
+  margin-bottom: 14px;
+  font-size: 1.05rem;
+  color: #5e2b11; /* marrón oscuro */
+  cursor: pointer;
+  transition: all 0.3s ease; /* transición para hover */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08); /* sombra muy ligera */
+  text-align: left;
+}
+
+/* Hover en opción (resaltado) */
+.choice:hover {
+  background-color: #fff1e0;
+  border-color: #ffa764; /* borde naranja */
+}
+
+/* Opción seleccionada */
+.choice.selected {
+  border-color: #ff7a00; /* borde naranja fuerte */
+  background-color: #ffd9b0; /* fondo naranja clarito */
+  font-weight: 700;
+  box-shadow: 0 0 10px rgba(255, 145, 0, 0.4); /* sombra naranja */
+}
+
+/* Opción correcta marcada */
+.choice.correct {
+  border-color: #4CAF50; /* verde */
+  background-color: #d4fdd4; /* verde clarito */
+  color: #257928;
+  font-weight: 700;
+  pointer-events: none; /* desactivo clicks */
+  box-shadow: 0 0 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Opción incorrecta marcada */
+.choice.incorrect {
+  border-color: #f44336; /* rojo */
+  background-color: #ffe5e5; /* rojo clarito */
+  color: #a12020;
+  font-weight: 700;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(244, 67, 54, 0.5);
+}
+
+/* Botones confirm y siguiente con ancho mínimo para que se vean bien */
+#confirm-btn,
+#next-btn {
+  min-width: 130px;
+}
+
+/* Texto del resultado final */
+#final-score {
+  font-size: 1.25rem;
+  color: #5f370e;
+  margin: 20px 0 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Responsive para móviles */
+@media (max-width: 520px) {
+  .screen {
+    padding: 20px 20px; /* menos padding para pantallas pequeñas */
+  }
+
+  .header {
+    flex-direction: column;
+    font-size: 0.95rem;
+  }
+
+  #question-container h2 {
+    font-size: 1.15rem; /* letra más pequeña */
+  }
+
+  .choice {
+    font-size: 1rem; /* letra más pequeña */
+  }
+}
+
+/* Texto del progreso, si lo usara */
+.progress-text {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1em;
+  color: #4a2c14;
+  text-align: center;
+}
+
+/* Controles centrados y con separación */
+.controls {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Contenedor principal con máximo ancho y centrado */
+#main-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Espaciado extra entre preguntas, para que no se vean apelotonadas */
+.question-spacing {
+  margin-top: 20px; /* ajusta a lo que prefieras */
+}

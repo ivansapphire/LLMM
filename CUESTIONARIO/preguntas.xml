@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE test [
+  <!ELEMENT test (question+)>
+  <!ELEMENT question (wording, choices)>
+  <!ELEMENT wording (#PCDATA)>
+  <!ELEMENT choices (choice+)>
+  <!ELEMENT choice (#PCDATA)>
+  <!ATTLIST question id CDATA #REQUIRED>
+  <!ATTLIST choice correct (yes|no) 'no'>
+]>
+<test>
+  <question id="1">
+    <wording>¿Cómo se llama el protagonista de "Los Gremlins"?</wording>
+    <choices>
+      <choice correct="yes">Gizmo</choice>
+      <choice correct="no">Gimli</choice>
+      <choice correct="no">BMO</choice>
+      <choice correct="no">Cornifer</choice>
+    </choices>
+  </question>
+  <question id="2">
+    <wording>¿Cómo se titula la quinta película de Star Wars?</wording>
+    <choices>
+      <choice correct="no">El retorno del Jedi</choice>
+      <choice correct="yes">El imperio contraataca</choice>
+      <choice correct="no">Spaceballs</choice>
+      <choice correct="no">Andor</choice>
+    </choices>
+  </question>
+  <question id="3">
+    <wording>¿Cuál es el nombre de la protagonista de la saga Metroid?</wording>
+    <choices>
+      <choice correct="yes">Samus Aran</choice>
+      <choice correct="no">Cortana</choice>
+      <choice correct="no">Lara Croft</choice>
+      <choice correct="no">Jill Valentine</choice>
+    </choices>
+  </question>
+  <question id="4">
+    <wording>¿Qué apodo recibe Gandalf?</wording>
+    <choices>
+      <choice correct="no">El Blanco</choice>
+      <choice correct="no">El Gris</choice>
+      <choice correct="no">Ninguno de los anteriores</choice>
+      <choice correct="yes">a y b son correctas </choice>
+    </choices>
+  </question>
+  <question id="5">
+    <wording>¿Quién es el protagonista de Resident Evil 4?</wording>
+    <choices>
+      <choice correct="no">John S. Kennedy</choice>
+      <choice correct="no">Shigeru Miyamoto</choice>
+      <choice correct="no">Mark P. Kennedy</choice>
+      <choice correct="yes">Leon S. Kennedy</choice>
+    </choices>
+  </question>
+  <question id="6">
+    <wording>¿Cuál de estas películas no fue producida por Studio Ghibli?</wording>
+    <choices>
+      <choice correct="no">Ponyo</choice>
+      <choice correct="no">Porco Rosso</choice>
+      <choice correct="no">Mis vecinos los Yamada</choice>
+      <choice correct="yes">Paprika</choice>
+    </choices>
+  </question>
+  <question id="7">
+    <wording>¿En cuál de estas películas no aparece John Travolta?</wording>
+    <choices>
+      <choice correct="no">Grease</choice>
+      <choice correct="no">Fiebre de sábado noche</choice>
+      <choice correct="no">Pulp Fiction</choice>
+      <choice correct="yes">Aftersun</choice>
+    </choices>
+  </question>
+  <question id="8">
+    <wording>¿Cuál de estas franquicias aún no tiene representación oficial en LEGO?</wording>
+    <choices>
+      <choice correct="no">Hora de Aventuras</choice>
+      <choice correct="no">Las Supernenas</choice>
+      <choice correct="no">Portal</choice>
+      <choice correct="yes">Dragon Ball</choice>
+    </choices>
+  </question>
+  <question id="9">
+    <wording>¿Para cuáles de estos videojuegos ha compuesto la banda sonora Yoko Shimomura?</wording>
+    <choices>
+      <choice correct="yes">Kingdom Hearts</choice>
+      <choice correct="no">Final Fantasy X</choice>
+      <choice correct="no">Super Paper Mario</choice>
+      <choice correct="no">Street Fighter 3</choice>
+    </choices>
+  </question>
+  <question id="10">
+    <wording>¿Cuál de estos cantantes o grupos no debutó en los años 80?</wording>
+    <choices>
+      <choice correct="yes">Michael Jackson</choice>
+      <choice correct="no">George Michael</choice>
+      <choice correct="no">Madonna</choice>
+      <choice correct="no">Pet Shop Boys</choice>
+    </choices>
+  </question>
+  <question id="11">
+    <wording>¿Cuál es el código Konami correcto?</wording>
+    <choices>
+      <choice correct="no">Arriba, arriba, abajo, abajo, salto, patada</choice>
+      <choice correct="no">Arriba, arriba, abajo, abajo, izquierda, izquierda, derecha, derecha, B, A, start</choice>
+      <choice correct="no">Arriba, abajo, izquierda, derecha, A</choice>
+      <choice correct="yes">Arriba, arriba, abajo, abajo, izquierda, derecha, izquierda, derecha, B, A, start</choice>
+    </choices>
+  </question>
+  <question id="12">
+    <wording>¿Cuál es el primer juego en la cronología de The Legend of Zelda?</wording>
+    <choices>
+      <choice correct="no">The Minish Cap</choice>
+      <choice correct="yes">Skyward Sword</choice>
+      <choice correct="no">A Link To The Past</choice>
+      <choice correct="no">Ocarina of Time</choice>
+    </choices>
+  </question>
+  <question id="13">
+    <wording>¿De cuál de estas series de animación es protagonista Spike Spiegel?</wording>
+    <choices>
+      <choice correct="no">Hamtaro</choice>
+      <choice correct="no">Candy Candy</choice>
+      <choice correct="yes">Cowboy Bebop</choice>
+      <choice correct="no">Initial D</choice>
+    </choices>
+  </question>
+  <question id="14">
+    <wording>¿Cuál de estos personajes es de la serie "The Office"?</wording>
+    <choices>
+      <choice correct="yes">Pam Beesly</choice>
+      <choice correct="no">James Sunderland</choice>
+      <choice correct="no">Barney Stinson</choice>
+      <choice correct="no">Sheldon Cooper</choice>
+    </choices>
+  </question>
+  <question id="15">
+    <wording>¿Qué película animada japonesa fue la primera en ganar un Óscar?</wording>
+    <choices>
+      <choice correct="no">Your Name</choice>
+      <choice correct="yes">El viaje de Chihiro</choice>
+      <choice correct="no">Akira</choice>
+      <choice correct="no">La Princesa Mononoke</choice>
+    </choices>
+  </question>
+  <question id="16">
+    <wording>¿Cuál de estos mangas fue creado por Naoki Urasawa?</wording>
+    <choices>
+      <choice correct="no">Nana</choice>
+      <choice correct="no">Death Note</choice>
+      <choice correct="yes">Monster</choice>
+      <choice correct="no">Samurai Champloo</choice>
+    </choices>
+  </question>
+  <question id="17">
+    <wording>¿Quién es el compositor principal de la banda sonora de "The Last of Us"?</wording>
+    <choices>
+      <choice correct="yes">Gustavo Santaolalla</choice>
+      <choice correct="no">Koji Kondo</choice>
+      <choice correct="no">Steve Spence</choice>
+      <choice correct="no">Bobby Kotick</choice>
+    </choices>
+  </question>
+  <question id="18">
+    <wording>¿Cuál de estos discos musicales ha vendido más copias?</wording>
+    <choices>
+      <choice correct="yes">Thriller</choice>
+      <choice correct="no">Rumours</choice>
+      <choice correct="no">Back to Black</choice>
+      <choice correct="no">Hotel California</choice>
+    </choices>
+  </question>
+  <question id="19">
+    <wording>¿En qué videojuego apareció por primera vez Waluigi?</wording>
+    <choices>
+      <choice correct="no">Mario Kart DS</choice>
+      <choice correct="no">Super Mario RPG</choice>
+      <choice correct="yes">Mario Tennis</choice>
+      <choice correct="no">Mario y Luigi: Dream Team Bros</choice>
+    </choices>
+  </question>
+  <question id="20">
+    <wording>¿Qué serie animada popular fue creada por Pendleton Ward?</wording>
+    <choices>
+      <choice correct="no">Historias Corrientes</choice>
+      <choice correct="no">El Laboratorio de Dexter</choice>
+      <choice correct="no">Código Lyoko</choice>
+      <choice correct="yes">Hora de Aventuras</choice>
+    </choices>
+  </question>
+</test>

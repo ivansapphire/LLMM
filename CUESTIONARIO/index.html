@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trabajo XML</title>
+  <!-- Aquí enlazo la hoja de estilos CSS para que la web tenga diseño -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="main-container">
+    <!-- Esta es la pantalla de inicio, la que se ve al entrar en la web -->
+    <div class="screen active" id="start-screen">
+      <h1 id="title-text">Preguntas de cultura pop</h1>
+
+      <!-- Selector para cambiar el idioma, llama a la función que actualiza textos -->
+      <label for="language">Idioma:</label>
+      <select id="language" onchange="updateLanguage()">
+        <option value="es">Español</option>
+        <option value="en">English</option>
+      </select>
+
+      <!-- Botón para empezar el cuestionario -->
+      <button id="start-button" onclick="startQuiz()">Comenzar</button>
+    </div>
+
+    <!-- Pantalla donde se hacen las preguntas, empieza oculta -->
+    <div class="screen" id="quiz-screen">
+      <div class="header">
+        <!-- Aquí pongo el temporizador para mostrar el tiempo que lleva el quiz -->
+        <span id="timer">Tiempo: 0s</span>
+        <!-- El marcador de puntuación lo quité porque no lo uso ahora -->
+        <!-- <span id="score">Puntuación: 0</span> --> 
+      </div>
+
+      <!-- Contenedor donde se carga la pregunta y sus opciones dinámicamente -->
+      <div id="question-container"></div>
+
+      <!-- Botón para pasar a la siguiente pregunta -->
+      <div class="controls">
+        <button id="next-btn" onclick="nextQuestion()">Siguiente</button>
+      </div>
+    </div>
+
+    <!-- Pantalla final que se muestra cuando se termina el cuestionario -->
+    <div class="screen" id="end-screen">
+      <h2 id="end-title">¡Has completado el test!</h2>
+      <!-- Aquí pongo la puntuación final -->
+      <p id="final-score"></p>
+      <!-- Botón para reiniciar la página y hacer el test otra vez -->
+      <button id="restart-button" onclick="location.reload()">Reiniciar</button>
+    </div>
+  </div>
+
+  <!-- Aquí enlazo el script JS que controla la lógica del quiz -->
+  <script src="script.js"></script>
+</body>
+</html>
