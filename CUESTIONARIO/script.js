@@ -1,17 +1,18 @@
 // Variables globales para manejar datos, estado y temporizador del quiz
-let xmlData;           // Aquí guardo el XML con todas las preguntas
-let currentQuestion = 0; // Índice para saber qué pregunta estamos mostrando
-let score = 0;          // Contador de respuestas correctas que llevo hasta ahora
-let timerInterval;      // Variable para el intervalo del cronómetro
-let time = 0;           // Tiempo que lleva pasando desde que empecé el quiz (en segundos)
-let selectedLanguage = 'es'; // Idioma actual del cuestionario, empieza en español
-let answered = false;   // Controla si ya respondí la pregunta actual para no repetir
+let xmlData;              // Aquí guardo el XML con todas las preguntas
+let currentQuestion = 0;  // Llevo el control de qué pregunta toca
+let score = 0;            // Puntos que llevo (respuestas correctas)
+let timerInterval;        // Intervalo del cronómetro
+let time = 0;             // Tiempo que ha pasado desde que empezó el test
+let selectedLanguage = 'es'; // Idioma por defecto al empezar
+let answered = false;     // Para evitar que se pueda contestar varias veces la misma
 
-// Función que actualiza todos los textos de la página según el idioma que elija el usuario
+// Cambia todos los textos según el idioma que haya elegido el usuario
 function updateLanguage() {
   const lang = document.getElementById("language").value;
   selectedLanguage = lang;
 
+  // Traducciones de los textos clave
   const translations = {
     es: {
       title: "Preguntas de cultura pop",
@@ -33,6 +34,7 @@ function updateLanguage() {
 
   const t = translations[lang];
 
+  // Actualizo los elementos del DOM con los textos traducidos
   document.getElementById("title-text").textContent = t.title;
   document.getElementById("start-button").textContent = t.start;
   document.getElementById("timer").textContent = `${t.time}: ${time}s`;
@@ -41,7 +43,7 @@ function updateLanguage() {
   document.getElementById("restart-button").textContent = t.restart;
 }
 
-// ✅ FUNCIÓN MODIFICADA CON AJAX CLÁSICO
+// Empieza el test, carga el XML dependiendo del idioma
 function startQuiz() {
   selectedLanguage = document.getElementById('language').value;
   const file = selectedLanguage === 'es' ? 'preguntas.xml' : 'preguntasen.xml';
@@ -53,19 +55,22 @@ function startQuiz() {
       const data = new window.DOMParser().parseFromString(xhr.responseText, "text/xml");
       xmlData = data;
 
+      // Oculto la pantalla de inicio y muestro el test
       document.getElementById('start-screen').classList.remove('active');
       document.getElementById('quiz-screen').classList.add('active');
 
-      startTimer();
-      showQuestion();
+      startTimer();   // Empieza el cronómetro
+      showQuestion(); // Muestro la primera pregunta
     }
   };
   xhr.send();
 }
 
+// Muestra la pregunta actual y las opciones
 function showQuestion() {
   const questions = xmlData.getElementsByTagName('question');
 
+  // Si ya no hay más preguntas, termina el test
   if (currentQuestion >= questions.length) {
     endQuiz();
     return;
@@ -75,6 +80,7 @@ function showQuestion() {
   const wording = question.getElementsByTagName('wording')[0].textContent;
   const choices = question.getElementsByTagName('choice');
 
+  // Muestra en qué pregunta vamos
   const progressText = selectedLanguage === 'es'
     ? `Pregunta ${currentQuestion + 1} de ${questions.length}`
     : `Question ${currentQuestion + 1} of ${questions.length}`;
@@ -88,6 +94,7 @@ function showQuestion() {
     <h2>${wording}</h2>
   `;
 
+  // Creo los botones de respuesta y les pongo el onclick
   Array.from(choices).forEach(choice => {
     const div = document.createElement('div');
     div.className = 'choice';
@@ -98,6 +105,7 @@ function showQuestion() {
   });
 }
 
+// Se ejecuta cuando el usuario selecciona una respuesta
 function selectAnswer(div, correct) {
   if (answered) return;
   answered = true;
@@ -107,6 +115,7 @@ function selectAnswer(div, correct) {
 
   div.classList.add('selected');
 
+  // Recorro todas las opciones para marcarlas como correctas o incorrectas
   allChoices.forEach(c => {
     const isCorrect = c === div
       ? correct
@@ -118,17 +127,19 @@ function selectAnswer(div, correct) {
       c.classList.add('incorrect');
     }
 
-    c.onclick = null;
+    c.onclick = null; // Desactivo el click para que no se pueda volver a contestar
   });
 
-  if (correct) score++;
+  if (correct) score++; // Si ha acertado, sumo punto
 }
 
+// Va a la siguiente pregunta
 function nextQuestion() {
   currentQuestion++;
   showQuestion();
 }
 
+// Cuando se termina el test, paro el cronómetro y muestro el resultado
 function endQuiz() {
   clearInterval(timerInterval);
   document.getElementById('quiz-screen').classList.remove('active');
@@ -141,6 +152,7 @@ function endQuiz() {
   document.getElementById('final-score').textContent = finalText;
 }
 
+// Inicia el cronómetro y actualiza cada segundo
 function startTimer() {
   const label = selectedLanguage === 'es' ? 'Tiempo' : 'Time';
   timerInterval = setInterval(() => {
