@@ -53,6 +53,19 @@ Ejercicio | Descripción
 [Ejercicio3DOM](/tercer_trimestre/EJ3/Ejercicio3DOM.html) | Eliminar elementos de una lista utilizando JavaScript.
 [Ejercicio4DOM](/tercer_trimestre/EJ4/Ejercicio4DOM.html) | Mostrar propiedades del documento HTML en la consola del navegador.
 
+## Tema 4 - xml
+
+Ejercicio | Descripción 
+----------|------------
+[Ejercicio1DOM](/tercer_trimestre/EJ1/ejercicio1.xml) | 
+[Ejercicio2DOM](/tercer_trimestre/EJ2/ejercicio2.xml) | 
+[Ejercicio3DOM](/tercer_trimestre/EJ3/ejercico3.xml) | 
+[Ejercicio4DOM](/tercer_trimestre/EJ4/ejercicio4.xml) | 
+[Ejercicio1DOM](/tercer_trimestre/EJ1/ejercicio5.xml) | 
+[Ejercicio2DOM](/tercer_trimestre/EJ2/ejercicio6.xml) | 
+[Ejercicio3DOM](/tercer_trimestre/EJ3/ejercico7.xml) | 
+
+
 
 ## PROYECTO - Tercer Trimestre
 Ejercicio | Descripción 
