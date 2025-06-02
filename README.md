@@ -57,13 +57,13 @@ Ejercicio | Descripción
 
 Ejercicio | Descripción 
 ----------|------------
-[Ejercicio1DOM](/tercer_trimestre/EJ1/ejercicio1.xml) | 
-[Ejercicio2DOM](/tercer_trimestre/EJ2/ejercicio2.xml) | 
-[Ejercicio3DOM](/tercer_trimestre/EJ3/ejercico3.xml) | 
-[Ejercicio4DOM](/tercer_trimestre/EJ4/ejercicio4.xml) | 
-[Ejercicio1DOM](/tercer_trimestre/EJ1/ejercicio5.xml) | 
-[Ejercicio2DOM](/tercer_trimestre/EJ2/ejercicio6.xml) | 
-[Ejercicio3DOM](/tercer_trimestre/EJ3/ejercico7.xml) | 
+[Ejercicio1](/tercer_trimestre/EJ1/ejercicio1.xml) | 
+[Ejercicio2](/tercer_trimestre/EJ2/ejercicio2.xml) | 
+[Ejercicio3](/tercer_trimestre/EJ3/ejercico3.xml) | 
+[Ejercicio4](/tercer_trimestre/EJ4/ejercicio4.xml) | 
+[Ejercicio5](/tercer_trimestre/EJ1/ejercicio5.xml) | 
+[Ejercicio6](/tercer_trimestre/EJ2/ejercicio6.xml) | 
+[Ejercicio7](/tercer_trimestre/EJ3/ejercico7.xml) | 
 
 
 
